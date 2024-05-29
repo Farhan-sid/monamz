@@ -1549,7 +1549,7 @@ ul.nt_filter_styleck > li > a:before {
   background: #fff;
   box-shadow: 0 1px rgba(212, 214, 216, 0.4);
   border-radius: 2px;
-  -webkit-appearance: none;
+  -webkitappearance: none;
 }
 
 .count_vr_filter {
