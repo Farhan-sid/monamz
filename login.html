@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in</title>
+    <link rel="stylesheet" href="public/css/login.css" />
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="page-main">
+        <div class="page-content login">
+          <div class="main-content">
+            <div class="login-card">
+              <div class="login-card-header">
+                <header class="login-card__header">
+                  <h1 class="login-card__logo">
+                    <a href="/index.html">
+                      <img src="/public/imgs/monamz.jpg" alt="Logo"
+                    /></a>
+                  </h1>
+                </header>
+                <div class="login-card__content">
+                  <div class="main-card-section">
+                    <div class="headings-container">
+                      <div>
+                        <h1 class="ui-heading">Log in</h1>
+                        <h3 class="ui-subheading ui-subheading--subdued">
+                          Enter your email
+                        </h3>
+                      </div>
+                    </div>
+                    <form action="#">
+                      <div class="input-field">
+                        <input type="text" required />
+                        <label>Email</label>
+                      </div>
+                      <div class="input-field">
+                        <input type="password" required />
+                        <label>Password</label>
+                      </div>
+                      <a href="#" class="forgot-pass">Forgot password</a>
+                      <button type="submit">Log in</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <footer class="login-footer">
+              Don't have an account?
+              <a href="#" id="signup-link">Signup</a>
+            </footer>
+          </div>
+        </div>
+        <div class="page-content signup">
+          <div class="main-content">
+            <div class="login-card">
+              <div class="login-card-header">
+                <header class="login-card__header">
+                  <h1 class="login-card__logo">
+                    <a href="/monamz.html">
+                      <img src="/monamz.jpg" alt="logo" />
+                    </a>
+                  </h1>
+                </header>
+                <div class="login-card__content">
+                  <div class="main-card-section">
+                    <div class="headings-container">
+                      <div>
+                        <h1 class="ui-heading">Sign up</h1>
+                        <h3 class="ui-subheading ui-subheading--subdued">
+                          Enter your email
+                        </h3>
+                      </div>
+                    </div>
+                    <form action="#">
+                      <div class="input-field">
+                        <input type="text" required />
+                        <label>Enter your email</label>
+                      </div>
+                      <div class="input-field">
+                        <input type="password" required />
+                        <label>Create password</label>
+                      </div>
+                      <div class="policy-text">
+                        <input type="checkbox" id="policy" />
+                        <label for="policy">
+                          I agree the
+                          <a href="#">Trems & conditions</a>
+                        </label>
+                      </div>
+                      <button type="submit">Sign up</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <footer class="login-footer">
+              Already have an account?
+              <a href="#" id="login-link">Login</a>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="public/js/login.js"></script>
+  </body>
+</html>
