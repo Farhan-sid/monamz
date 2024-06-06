@@ -41,9 +41,9 @@
     width: 340px;
     background-color: white;
     overflow-y: hidden;
-    position: fixed;
+    position: absolute;
     top: 0px;
-    bottom: 0;
+    /* bottom: 0; */
     width: 300px !important;
     background-color: #fff;
     left: -354px;
@@ -204,7 +204,7 @@
   }
 
   .row {
-    flex-direction: column;
+    flex-direction: column !important;
   }
 
   .row :nth-child(4) {
@@ -213,18 +213,89 @@
 
   .order_1 {
     /* margin-bottom: 30px !important; */
+    padding: 0 0 !important;
   }
 
   .widget_nav_menu {
     /* padding: 0 15px; */
+    width: 100% !important;
+  }
+
+  #widget_title_bar {
+    display: flex !important;
+    align-items: center !important;
+    color: #ffffff !important;
+    padding: 0 7.5px !important;
   }
 
   .text_title {
     font-size: 20px !important;
   }
 
+  .nav_link_icon {
+    width: 12px;
+    height: 12px;
+    position: relative;
+    display: block;
+    ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    cursor: pointer; /* cursor pointer for clickable effect */
+  }
+
+  .nav_link_icon:before,
+  .nav_link_icon:after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 1px;
+    background-color: currentColor;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    transition: transform 0.35s ease-in-out, opacity 0.35s ease-in-out;
+  }
+
+  /* Initial state */
+  .nav_link_icon:before {
+    opacity: 1;
+  }
+
+  /* State after click */
+  .nav_link_icon.active:before {
+    transform: translate(-50%, -50%) rotate(0deg);
+    opacity: 0;
+  }
+
+  .nav_link_icon:after,
+  .nav_link_icon:before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) rotate(-90deg);
+    transform: translate(-50%, -50%) rotate(-90deg);
+    background-color: currentColor;
+    transition: transform 0.35s ease-in-out, opacity 0.35s ease-in-out,
+      -webkit-transform 0.35s ease-in-out;
+  }
+
+  .nav_link_icon:after {
+    width: 1px;
+    height: 12px;
+  }
+
   .menu_cn {
     display: none;
+    opacity: 0;
+    transform: translateY(-20px); /* Initially move the menu 20px up */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  /* Show the menu when .active class is added */
+  .menu_cn.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0); /* Move the menu to its original position */
   }
 
   .footer_contant {

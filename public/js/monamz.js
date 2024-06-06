@@ -39,3 +39,23 @@ cd.addEventListener("click",function(){
     mo.style.visibility = 'hidden'
     body.style.overflowY = "visible"
 })
+
+// document.querySelectorAll('.nav_link_icon').forEach(function(icon) {
+//     icon.addEventListener('click', function() {
+//         this.classList.toggle('active');
+//     });
+// });
+
+document.querySelectorAll('.nav_link_icon').forEach(function(icon) {
+    icon.addEventListener('click', function() {
+        // Toggle active class on the icon
+        this.classList.toggle('active');
+        
+        // Find the related menu and toggle the active class
+        const menu = document.querySelector('.menu_cn');
+        if (menu) {
+            menu.classList.toggle('active');
+        }
+    });
+});
+
