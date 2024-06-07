@@ -238,7 +238,7 @@
     height: 12px;
     position: relative;
     display: block;
-    ms-flex: 0 0 auto;
+    -msflex: 0 0 auto;
     flex: 0 0 auto;
     cursor: pointer; /* cursor pointer for clickable effect */
   }
@@ -287,16 +287,15 @@
 
   .menu_cn {
     display: none;
-    opacity: 0;
-    transform: translateY(-20px); /* Initially move the menu 20px up */
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    /* opacity: 0; */
+    transform: translateY(-20px);
+    transition: transform 01.3s, opacity 0.3s;
   }
 
-  /* Show the menu when .active class is added */
-  .menu_cn.active {
+  .menu_cn.show {
     display: block;
     opacity: 1;
-    transform: translateY(0); /* Move the menu to its original position */
+    transform: translateY(0);
   }
 
   .footer_contant {
@@ -338,5 +337,86 @@
 
   .row :nth-child(6) {
     margin-top: 30px !important;
+  }
+
+  /*  */
+  /*  */
+  .kalles_toolbar {
+    transform: none !important;
+    -webkit-transform: none !important;
+  }
+  .kalles_toolbar {
+    background-color: #fff !important;
+    position: fixed !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 68px !important;
+    z-index: 350 !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    -webkit-overflow-scrolling: touch !important;
+    padding: 5px !important;
+    height: 55px !important;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.12) !important;
+    transform: translate3d(0, 104%, 0) !important;
+    -webkit-transform: translate3d(0, 104%, 0) !important;
+    transition: transform 0.25s !important;
+  }
+  .fl_between {
+    -webkit-justify-content: space-between !important;
+    -ms-flex-pack: justify !important;
+    -webkit-box-pack: justify !important;
+    justify-content: space-between !important;
+  }
+  .al_center {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+  }
+  .flex {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+
+  .kalles_toolbar_label_true .kalles_toolbar_item > a {
+    position: relative;
+    /* padding-bottom: 15px; */
+  }
+  .kalles_toolbar_item > a {
+    padding-right: 10px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 45px;
+    color: #222;
+    font-weight: 400;
+    line-height: 1;
+  }
+
+  .swatch .nt-swatch,
+  a,
+  button,
+  input {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+  }
+  a,
+  a:active,
+  a:focus,
+  a:hover {
+    text-decoration: none;
+    outline: 0;
+  }
+  a {
+    color: #222;
+    transition: 0.3s;
+  }
+
+  .toolbar_icon i {
+    font-size: 20px !important;
+    padding-bottom: 2px !important;
   }
 }

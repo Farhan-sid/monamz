@@ -479,12 +479,12 @@ span {
   width: 100%;
   background-color: #eee;
 }
+
 /* footer */
 .cn_footer {
   /* height: 516.84px; */
   width: 100%;
   background-color: #080808;
-  margin-top: 20px;
 }
 
 #footer_top {
@@ -497,11 +497,6 @@ span {
   width: 100%;
   padding-top: 80px;
   padding-bottom: 30px;
-}
-
-.footer_contant {
-  /* height: 100%;
-  width: 100%; */
 }
 
 .row {
@@ -517,14 +512,12 @@ span {
   padding: 0 15px;
   /* height: 222.84px; */
   margin-bottom: 30px;
-  width: 100%;
 }
 
 #widget_title_bar {
-  /* display: flex;
-  justify-content: flex-start; */
+  display: flex;
+  justify-content: flex-start;
   margin-bottom: 30px;
-  /* padding: 0 7.5px; */
 }
 
 .widget_nav_menu {
@@ -542,8 +535,8 @@ span {
 }
 
 .footer_menu {
-  /* height: 170px;
-  width: 170px; */
+  /* height: 170px; */
+  width: 170px;
 }
 
 .menu_cn {
@@ -553,7 +546,7 @@ span {
 
 .menu_item {
   height: 30px;
-  /* width: 170px; */
+  width: 170px;
   margin-bottom: 5px;
   list-style: none;
   line-height: 30px;
@@ -570,12 +563,12 @@ span {
 }
 
 #order_5 {
-  /* height: 106.19px; */
+  height: 106.19px;
   width: 370px;
 }
 
 .footer_text {
-  /* height: 106.19px; */
+  height: 106.19px;
   /* width: 370px; */
 }
 
@@ -603,7 +596,7 @@ span {
 
 .email {
   height: 40px;
-  /* width: 262.56px; */
+  width: 262.56px;
 }
 
 input {
@@ -611,14 +604,10 @@ input {
   width: 240px;
   border: 1px solid #878787;
   background-color: transparent;
-  /* padding: 0 10px; */
+  padding: 0 10px;
   color: #878787;
   outline: 0;
 }
-
-/* ::placeholder {
-  padding-left: 10px;
-} */
 
 .button {
   width: 107.44px;
@@ -650,11 +639,6 @@ input {
 .footer_social_logo {
   height: 21px;
   width: 100%;
-}
-
-.footer_contant {
-  /* height: 100%;
-  width: 100%; */
 }
 
 .social_contant {
@@ -710,7 +694,6 @@ input {
   transition: 0.3s;
   transform: translatey(-50%);
 }
-
 .menu-container {
   display: none;
 }
@@ -989,4 +972,8 @@ select {
 .detail_link:hover .fa-arrow-right {
   transform: translateX(5px);
   transition: -webkit-transform 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.kalles_toolbar {
+  display: none;
 }
