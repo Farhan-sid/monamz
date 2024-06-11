@@ -6,6 +6,8 @@ var body = document.querySelector("body")
 var mb = document.querySelector(".menu-bar")
 var mc = document.querySelector(".menu-container")
 var cd = document.querySelector(".cd")
+var sb = document.querySelector(".sea-bar")
+
 
 
 sea.addEventListener("click",function(){
@@ -58,3 +60,11 @@ document.querySelectorAll('.nav_link_icon').forEach(icon => {
       }
     });
   });
+
+  sb.addEventListener("click",function(){
+    dn.style.opacity = 1
+    dn.style.visibility = 'visible'
+    mo.style.opacity = 1
+    mo.style.visibility = 'visible'
+    body.style.overflowY = "hidden"
+})

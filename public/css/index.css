@@ -74,7 +74,7 @@ header {
 
 .navigation-bar {
   height: 70px;
-  width: 1599px;
+  width: 100%;
   /* background-color: aqua; */
   padding-left: 15px;
   padding-right: 15px;
@@ -82,7 +82,7 @@ header {
 
 .nav-bar {
   height: 70px;
-  width: 1570px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -381,7 +381,7 @@ header {
 
 /* main */
 .shop-section {
-  height: 628px;
+  height: 100%;
   width: 100%;
   /* background-color: aqua; */
 }
@@ -410,7 +410,7 @@ header {
 .title::before {
   content: "";
   border-bottom: 1px solid #dfdfdf;
-  width: 36%;
+  width: 30%;
 }
 
 span {
@@ -424,7 +424,7 @@ span {
 .title::after {
   content: "";
   border-bottom: 1px solid #dfdfdf;
-  width: 36%;
+  width: 30%;
 }
 
 .mt_30 {
@@ -434,6 +434,7 @@ span {
   margin-top: 30px;
   /* background-color: blueviolet; */
   display: flex;
+  /* align-items: center; */
 }
 
 .cat_space_item {
@@ -445,7 +446,7 @@ span {
 }
 
 .cat_space_item img {
-  height: 380px;
+  /* height: 380px; */
   width: 380px;
   margin-bottom: 26px;
 }
@@ -633,7 +634,7 @@ input {
 
 #order_6 {
   height: 21px;
-  width: 1170px;
+  width: 100%;
 }
 
 .footer_social_logo {
