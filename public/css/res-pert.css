@@ -13,9 +13,9 @@
     flex-direction: column !important;
   }
   /* 
-  .nav-searching {
-    flex-direction: column;
-  } */
+    .nav-searching {
+      flex-direction: column;
+    } */
 
   .line {
     display: block !important; /* Show the menu-bar */
@@ -325,8 +325,8 @@
   }
 
   /* ::placeholder {
-    padding-left: 10px;
-  } */
+      padding-left: 10px;
+    } */
 
   .button {
     width: 100% !important;
@@ -490,3 +490,4 @@
     position: inherit;
   }
 }
+s

@@ -141,7 +141,9 @@ header {
 }
 
 #item-1:hover .item-1-container,
-.item-1-container:hover {
+#item-2:hover .item-2-container,
+#item-3:hover .item-3-container {
+  pointer-events: auto;
   opacity: 1;
 }
 
@@ -694,7 +696,10 @@ input {
   color: blue;
   transition: 0.3s;
   transform: translatey(-50%);
-}
+} 
+
+/*  */
+/* footer */
 .menu-container {
   display: none;
 }

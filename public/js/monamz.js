@@ -68,3 +68,45 @@ document.querySelectorAll('.nav_link_icon').forEach(icon => {
     mo.style.visibility = 'visible'
     body.style.overflowY = "hidden"
 })
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  var items = [
+    { item: document.getElementById('item-1'), container: document.querySelector('.item-1-container') },
+    { item: document.getElementById('item-2'), container: document.querySelector('.item-2-container') },
+    { item: document.getElementById('item-3'), container: document.querySelector('.item-3-container') }
+  ];
+
+  items.forEach(function(pair) {
+    var item = pair.item;
+    var container = pair.container;
+
+    item.addEventListener('mouseenter', function () {
+      container.style.opacity = '1';
+      container.style.pointerEvents = 'auto';
+    });
+
+    item.addEventListener('mouseleave', function () {
+      // Delay to allow moving to container
+      setTimeout(function () {
+        if (!container.matches(':hover')) {
+          container.style.opacity = '0';
+          container.style.pointerEvents = 'none';
+        }
+      }, 300);
+    });
+
+    container.addEventListener('mouseleave', function () {
+      container.style.opacity = '0';
+      container.style.pointerEvents = 'none';
+    });
+
+    container.addEventListener('mouseenter', function () {
+      container.style.opacity = '1';
+      container.style.pointerEvents = 'auto';
+    });
+  });
+});
+
+
+
