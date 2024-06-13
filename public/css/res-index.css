@@ -197,7 +197,7 @@
   }
 
   .cat_space_item img {
-    /* height: 100% !important; */
+    height: 100% !important;
     width: 100% !important;
     margin-bottom: 10px !important;
     object-fit: contain;
@@ -436,7 +436,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1231px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .mt_30 {
     height: 100% !important;
     width: 100% !important;
@@ -454,9 +454,39 @@
 
   .row {
     width: 100% !important;
+    justify-content: center;
   }
 
   .row :nth-child(4) {
+    /* display: none !important; */
+  }
+
+  #order_5 {
+    height: 106.19px;
+    width: 100% !important;
+  }
+
+  .email {
+    height: 40px;
+    width: 100% !important;
+  }
+
+  input {
+    width: 100% !important;
+  }
+
+  #order_6 {
+    position: relative;
+    top: 50px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 845px) {
+  .row :nth-child(4) {
     display: none !important;
+  }
+
+  #order_6 {
+    position: inherit;
   }
 }
