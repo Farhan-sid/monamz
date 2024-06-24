@@ -446,11 +446,11 @@ header {
 
 .cat_toolbar {
   height: 37px;
-  width: 1600px;
+  width: 100%;
   /* background: aqua; */
   margin-top: 40px;
   margin-bottom: 10px;
-  margin-left: -15px;
+  /* margin-left: -15px; */
   margin-right: -15px;
   display: flex;
   align-items: center;
@@ -459,7 +459,7 @@ header {
 .cat_filter {
   width: 755px;
   /* background: red; */
-  padding: 0 15px;
+  /* padding: 0 15px; */
 }
 
 .btn_filter {
@@ -481,9 +481,9 @@ header {
 }
 
 .featured {
-  width: 755px;
+  width: 100%;
   /* background: red; */
-  padding: 0 15px;
+  /* padding: 0 15px; */
   text-align: -webkit-right;
 }
 

@@ -85,7 +85,7 @@
   }
 
   span {
-    /* margin: 0 0.8em !important; */
+    margin: 0 0.8em !important;
     max-width: 100% !important;
     font-size: 13px !important;
     font-family: "Playfair Display", serif;
@@ -113,7 +113,7 @@
   }
 
   .section_nt_filter i {
-    line-height: 0.7;
+    line-height: 1.5;
     font-size: 26px;
     cursor: pointer;
   }
@@ -180,14 +180,6 @@
     color: #000;
   }
 
-  .mt_30 > .cat_space_item:nth-child(2) {
-    display: none;
-  }
-
-  .mt_30 > .cat_space_item:nth-child(3) {
-    display: none;
-  }
-
   .cat_space_item {
     height: 100% !important;
     width: 100% !important;
@@ -203,6 +195,46 @@
     object-fit: contain;
   }
 
+  /*  */
+  /*  */
+  .main-container {
+    /* width: 100% !important; */
+  }
+
+  .cat_toolbar {
+    width: 100% !important;
+  }
+
+  .main-row {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+
+  .row_container {
+    width: 100% !important;
+  }
+
+  .row_contant {
+    width: 100% !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+  }
+
+  .row_contant .pr-animated {
+    flex: 0 0 50% !important; /* Two items per row */
+    max-width: 50% !important;
+    box-sizing: border-box !important;
+  }
+
+  .ab {
+    width: 100% !important;
+  }
+
+  .ho {
+    width: 100% !important;
+  }
+
+  /* footer */
   .row {
     flex-direction: column !important;
     width: 100% !important;
@@ -490,4 +522,3 @@
     position: inherit;
   }
 }
-s
