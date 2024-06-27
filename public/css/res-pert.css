@@ -202,7 +202,9 @@
   }
 
   .cat_toolbar {
-    width: 100% !important;
+    /* width: 100% !important; */
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
 
   .main-row {
