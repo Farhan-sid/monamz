@@ -721,7 +721,7 @@ svg.ic_triangle_svg {
 }
 
 .add__w {
-  width: 346px;
+  /* width: 346px; */
   height: 30px;
   position: relative;
   margin: auto;
@@ -1408,13 +1408,13 @@ select {
 
 .popup_filter {
   width: 340px;
-  background-color: white;
+  color: white;
   overflow-y: hidden;
   position: fixed;
   top: 0px;
   bottom: 0;
   width: 340px;
-  background-color: #fff;
+  background-color: #000;
   left: -354px;
   overflow-y: auto;
   overflow-x: hidden;

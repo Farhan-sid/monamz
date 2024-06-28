@@ -128,51 +128,51 @@
   }
 
   .bgb {
-    background-color: rgba(0, 0, 0, 0.05);
-    color: #000;
+    background-color: rgba(0, 0, 0, 0.05) !important;
+    color: #000 !important;
   }
 
   .h3 {
-    padding: 5px 0 5px 5px;
-    border-bottom: 1px solid rgba(129, 129, 129, 0.2);
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
+    padding: 5px 0 5px 5px !important;
+    border-bottom: 1px solid rgba(129, 129, 129, 0.2) !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
     /* box-shadow: 0 0 10px 0 rgba(129, 129, 129, 0.2); */
-    justify-content: space-between;
-    min-height: 50px;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
+    /* justify-content: space-between !important; */
+    min-height: 50px !important;
+    -ms-flex: 0 0 auto !important;
+    flex: 0 0 auto !important;
   }
 
   .loke_scroll ul li {
-    border-bottom: 1px solid rgba(129, 129, 129, 0.2);
-    height: 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    flex-direction: row;
-    padding: 5px 50px;
-    min-height: 50px;
-    border-bottom: 1px solid rgba(129, 129, 129, 0.2);
-    color: #222;
-    font-size: 14px;
-    text-align: left;
-    line-height: 1.3;
-    letter-spacing: 0.2px;
-    font-size: 14px;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
+    border-bottom: 1px solid rgba(129, 129, 129, 0.2) !important;
+    height: 50px !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    -webkit-flex-direction: row !important;
+    -ms-flex-direction: row !important;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    flex-direction: row !important;
+    padding: 5px 50px !important;
+    min-height: 50px !important;
+    border-bottom: 1px solid rgba(129, 129, 129, 0.2) !important;
+    color: #222 !important;
+    font-size: 14px !important;
+    text-align: left !important;
+    line-height: 1.3 !important;
+    letter-spacing: 0.2px !important;
+    font-size: 14px !important;
+    -webkit-justify-content: space-between !important;
+    -ms-flex-pack: justify !important;
+    -webkit-box-pack: justify !important;
+    justify-content: space-between !important;
   }
 
   .loke_scroll a {
@@ -195,6 +195,10 @@
     object-fit: contain;
   }
 
+  /* .loke_scroll ul.nt_filter_styleck > li > a:before {
+    display: none !important;
+  } */
+
   /*  */
   /*  */
   .main-container {
@@ -205,6 +209,10 @@
     /* width: 100% !important; */
     padding-left: 15px !important;
     padding-right: 15px !important;
+  }
+
+  .wrap_sortby {
+    right: 16px !important;
   }
 
   .main-row {
@@ -226,6 +234,7 @@
     flex: 0 0 50% !important; /* Two items per row */
     max-width: 50% !important;
     box-sizing: border-box !important;
+    padding: 0 7.5px !important;
   }
 
   .ab {
@@ -380,17 +389,13 @@
   /*  */
   /*  */
   .kalles_toolbar {
-    transform: none !important;
-    -webkit-transform: none !important;
-  }
-  .kalles_toolbar {
     background-color: #fff !important;
     position: fixed !important;
     left: 0 !important;
     right: 0 !important;
     bottom: 67px !important;
     z-index: 350 !important;
-    overflow-x: auto !important;
+    overflow-x: hidden !important; /* Change overflow-x to hidden */
     overflow-y: hidden !important;
     -webkit-overflow-scrolling: touch !important;
     padding: 5px !important;
@@ -402,7 +407,8 @@
   }
 
   .kalles_toolbar_item {
-    width: 100%;
+    flex: 1; /* Use flex: 1 instead of width: 100% */
+    text-align: center; /* Center align the items */
   }
 
   .fl_between {
@@ -411,15 +417,18 @@
     -webkit-box-pack: justify !important;
     justify-content: space-between !important;
   }
+
   .al_center {
     -webkit-box-align: center !important;
     -ms-flex-align: center !important;
     align-items: center !important;
   }
+
   .flex {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
+    max-width: 100%; /* Ensure the flex container doesn't exceed the screen width */
   }
 
   .kalles_toolbar_label_true .kalles_toolbar_item > a {
@@ -463,7 +472,6 @@
     padding-bottom: 2px !important;
   }
 }
-
 @media (min-width: 300px) and (max-width: 414px) {
   .kalles_toolbar_item {
     width: 60px;
