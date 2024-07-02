@@ -472,7 +472,7 @@ header {
 
 .fa-solid {
   font-size: 16px;
-  height: 16px;
+  /* height: 16px; */
   margin-right: 3px;
 }
 
@@ -1408,14 +1408,14 @@ select {
 
 .popup_filter {
   width: 340px;
-  color: white;
+  /* color: white; */
   overflow-y: hidden;
   position: fixed;
   top: 0px;
   bottom: 0;
-  width: 340px;
-  background-color: #000;
-  left: -354px;
+  width: 300px;
+  background-color: #fff;
+  left: -312px;
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
@@ -1646,7 +1646,7 @@ ul.nt_filter_styleck > li > a:before {
   font-size: 12px;
 }
 
-.button {
+.nt-button {
   order: 2;
   margin-bottom: 10px;
   font-size: 12px;
