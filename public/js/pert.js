@@ -14,6 +14,7 @@ var ao = document.querySelector(".act_opened")
 var mb = document.querySelector(".menu-bar")
 var mc = document.querySelector(".menu-container")
 var cd = document.querySelector(".cd")
+var sb = document.querySelector(".sea-bar")
 
 
 var isHidden = false;
@@ -154,6 +155,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+
 
 
 

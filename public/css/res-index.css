@@ -490,3 +490,10 @@
     position: inherit;
   }
 }
+
+@media (min-width: 300px) and (max-width: 450px) {
+  .menu-container {
+    width: 250px !important;
+    left: -260px !important;
+  }
+}
