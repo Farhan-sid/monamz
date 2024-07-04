@@ -157,6 +157,22 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const filterButton = document.querySelector('.your-filter-button-class'); // Replace with your button's class or ID
+    const popupFilter = document.querySelector('.popup_filter');
+
+    filterButton.addEventListener('click', () => {
+      popupFilter.classList.toggle('active');
+    });
+
+    // Optional: Add a close button inside the popup
+    const closeButton = document.querySelector('.popup_filter .fa-xmark'); // Replace with your close button's class or ID
+    closeButton.addEventListener('click', () => {
+      popupFilter.classList.remove('active');
+    });
+  });
+
+
 
 
 

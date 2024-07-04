@@ -90,6 +90,7 @@ header {
   gap: 100px;
   position: relative;
   /* background-color: blue; */
+  left: 18px;
 }
 
 .menu {
@@ -573,7 +574,7 @@ svg.ic_triangle_svg {
   height: auto;
   /* top: 10px; */
   left: auto;
-  right: 160px;
+  right: 220px;
   bottom: auto;
   min-width: 190px;
   box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.1);
@@ -649,7 +650,7 @@ svg.ic_triangle_svg {
 }
 
 .main-row {
-  width: 1600px;
+  width: 1480px;
   margin-left: -15px;
   margin-right: -15px;
 }
@@ -660,7 +661,7 @@ svg.ic_triangle_svg {
 }
 
 .row_contant {
-  width: 1600px;
+  width: 100%;
   /* margin-left: -15px;
   margin-right: -15px; */
   display: flex;
@@ -1425,10 +1426,10 @@ select {
   transform: translate3d(104%, 0, 0); /* Ensure it starts off-screen */
 }
 
-.popup_filter.show {
-  transform: translate3d(340px, 0, 0); /* Bring into view */
+.popup_filter.active {
   opacity: 1;
   visibility: visible;
+  transform: translate3d(0, 0, 0);
 }
 
 .popup_filter i {
@@ -1669,5 +1670,9 @@ ul.nt_filter_styleck > li > a:before {
 }
 
 .kalles_toolbar {
+  display: none;
+}
+
+.menu-container {
   display: none;
 }
