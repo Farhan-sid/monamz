@@ -84,6 +84,11 @@
     /* background-color: red; */
   }
 
+
+  h2 span{
+    font-size: 9px !important;
+  }
+
   span {
     /* margin: 0 0.8em !important; */
     max-width: 100% !important;

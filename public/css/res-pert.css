@@ -349,6 +349,7 @@
     width: 12px;
     height: 12px;
     position: relative;
+    margin-left: 5px;
     display: block;
     -msflex: 0 0 auto;
     flex: 0 0 auto;
@@ -625,7 +626,7 @@
     padding-left: 7.5px !important;
     padding-right: 7.5px !important;
   }
-  
+
   .main-row {
     width: 100% !important;
     margin-left: 0px !important;
