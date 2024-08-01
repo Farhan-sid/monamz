@@ -242,8 +242,8 @@ header {
   text-align: left;
   position: absolute;
   height: 403px;
-  width: 1890px;
-  left: -358.375px;
+  width: 100vw;
+  left: -182.75px;
   background: #fff;
   top: 100%;
   z-index: 10;
@@ -295,8 +295,8 @@ header {
   text-align: left;
   position: absolute;
   height: 316px;
-  width: 1890px;
-  left: -358.375px;
+  width: 100vw;
+  left: -182.75px;
   background: #fff;
   top: 100%;
   z-index: 10;
