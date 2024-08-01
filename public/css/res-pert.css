@@ -252,9 +252,6 @@
 
   /*  */
   /*  */
-  .main-container {
-    /* width: 100% !important; */
-  }
 
   .cat_toolbar {
     /* width: 100% !important; */
@@ -567,10 +564,6 @@
   .row {
     width: 100% !important;
     justify-content: center;
-  }
-
-  .row :nth-child(4) {
-    /* display: none !important; */
   }
 
   #order_5 {
