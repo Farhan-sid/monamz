@@ -128,8 +128,8 @@ header {
   text-align: left;
   position: absolute;
   height: 142px;
-  width: 1000px;
-  left: 294.625px;
+  width: 800px;
+  left: 412.625px;
   background: #fff;
   top: 100%;
   z-index: 10;
@@ -168,7 +168,7 @@ header {
 
 .sub-menu-con1 {
   height: 93px;
-  width: 220px;
+  width: 170px;
   position: absolute;
   left: 0%;
   top: 0px;
@@ -196,7 +196,7 @@ header {
 
 .sub-menu-con2 {
   height: 93px;
-  width: 220px;
+  width: 170px;
   position: absolute;
   left: 25%;
   top: 0px;
@@ -205,7 +205,7 @@ header {
 
 .sub-menu-con3 {
   height: 93px;
-  width: 220px;
+  width: 170px;
   position: absolute;
   left: 50%;
   top: 0px;
@@ -214,7 +214,7 @@ header {
 
 .sub-menu-con4 {
   height: 93px;
-  width: 220px;
+  width: 170px;
   position: absolute;
   left: 75%;
   top: 0px;
@@ -319,7 +319,7 @@ header {
   padding: 0 15px;
   margin: 0 auto;
   height: 100%;
-  width: 970px;
+  width: 770px;
   overflow-y: auto;
 }
 
@@ -654,8 +654,6 @@ svg.ic_triangle_svg {
   margin-left: -15px;
   margin-right: -15px;
 }
-
-
 
 .row_contant {
   width: 100%;
