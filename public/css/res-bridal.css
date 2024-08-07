@@ -252,7 +252,6 @@
 
   /*  */
   /*  */
- 
 
   .cat_toolbar {
     /* width: 100% !important; */
@@ -346,6 +345,7 @@
   .nav_link_icon {
     width: 12px;
     height: 12px;
+    margin: 0 0.8rem;
     position: relative;
     display: block;
     -msflex: 0 0 auto;
@@ -574,8 +574,6 @@
     width: 100% !important;
     justify-content: center;
   }
-
- 
 
   #order_5 {
     height: 106.19px;
