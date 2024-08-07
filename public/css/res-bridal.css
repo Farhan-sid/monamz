@@ -252,9 +252,7 @@
 
   /*  */
   /*  */
-  .main-container {
-    /* width: 100% !important; */
-  }
+ 
 
   .cat_toolbar {
     /* width: 100% !important; */
@@ -455,6 +453,15 @@
     margin-top: 40px !important;
   }
 
+  .popup_filter {
+    width: 250px !important;
+    left: -260px !important;
+  }
+
+  .widget {
+    max-width: 210px !important;
+  }
+
   /*  */
   /*  */
   .kalles_toolbar {
@@ -568,9 +575,7 @@
     justify-content: center;
   }
 
-  .row :nth-child(4) {
-    /* display: none !important; */
-  }
+ 
 
   #order_5 {
     height: 106.19px;

@@ -453,6 +453,15 @@
     margin-top: 40px !important;
   }
 
+  .popup_filter {
+    width: 250px !important;
+    left: -260px !important;
+  }
+
+  .widget {
+    max-width: 210px !important;
+  }
+
   /*  */
   /*  */
   .kalles_toolbar {
