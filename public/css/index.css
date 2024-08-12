@@ -419,7 +419,7 @@ header {
 span {
   margin: 0 0.8em;
   max-width: 100%;
-  font-size: 28px;
+  font-size: 27px;
   font-family: "Playfair Display", serif;
   font-weight: 500;
 }
@@ -526,12 +526,12 @@ span {
 
 .widget_nav_menu {
   /* height: 222.84px; */
-  width: 170px;
+  width: 100%;
 }
 
 .text_title {
   max-width: 100%;
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Playfair Display", serif;
   font-weight: 500;
   color: #ffffff;
