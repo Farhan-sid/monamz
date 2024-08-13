@@ -315,6 +315,7 @@
   .row {
     flex-direction: column !important;
     width: 100% !important;
+    padding: 0 0 !important;
   }
 
   .row :nth-child(4) {
@@ -571,10 +572,24 @@
   }
 
   .row {
-    width: 100% !important;
-    justify-content: center;
+    width: auto !important;
   }
-  
+
+  .order_1 {
+    margin-bottom: 50px !important;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 0 !important;
+  }
+
+  .row :nth-child(5) {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .footer_text p {
+    text-align: center;
+  }
 
   #order_5 {
     height: 106.19px;
@@ -597,10 +612,6 @@
 }
 
 @media (min-width: 768px) and (max-width: 845px) {
-  .row :nth-child(4) {
-    display: none !important;
-  }
-
   #order_6 {
     position: inherit;
   }

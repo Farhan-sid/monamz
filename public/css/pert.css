@@ -941,11 +941,10 @@ svg.ic_triangle_svg {
   height: 100%;
   width: 1200px;
   margin: 0 auto;
-  /* padding: 0 15px; */
+  padding: 0 15px;
   display: flex;
   flex-wrap: wrap;
 }
-
 
 .order_1 {
   padding: 0 15px;
@@ -1049,7 +1048,7 @@ input {
 }
 
 .button {
-  width: 107.44px;
+  /* width: 107.44px; */
   height: 40px;
 }
 

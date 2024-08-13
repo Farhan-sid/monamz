@@ -210,6 +210,7 @@
   .row {
     flex-direction: column !important;
     width: 100% !important;
+    padding: 0 0 !important;
   }
 
   .order_1 {
@@ -340,7 +341,7 @@
   }
 
   .row :nth-child(6) {
-    margin-top: 40px !important;
+    margin-top: 50px !important;
   }
 
   /*  */
@@ -436,6 +437,11 @@
   }
 }
 
+@media (min-width: 300px) and (max-width: 445px){
+  .row :nth-child(6) {
+    margin-top: 60px !important;
+}
+}
 @media (min-width: 768px) and (max-width: 1199px) {
   .mt_30 {
     height: 100% !important;
@@ -453,8 +459,7 @@
   }
 
   .row {
-    width: 100% !important;
-    justify-content: center;
+    width: auto !important;
   }
 
   .order_1 {
@@ -464,8 +469,13 @@
     padding: 0 0 !important;
   }
 
-  .widget_nav_menu {
-    padding: 0 10px;
+  .row :nth-child(5) {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .footer_text p {
+    text-align: center;
   }
 
   #order_5 {
