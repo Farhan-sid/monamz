@@ -252,7 +252,6 @@
 
   /*  */
   /*  */
- 
 
   .cat_toolbar {
     /* width: 100% !important; */
@@ -316,6 +315,7 @@
   .row {
     flex-direction: column !important;
     width: 100% !important;
+    padding: 0 0 !important;
   }
 
   .row :nth-child(4) {
@@ -346,8 +346,8 @@
   .nav_link_icon {
     width: 12px;
     height: 12px;
-    margin: 0 0.8rem;
     position: relative;
+    margin: 0 0.8rem;
     display: block;
     -msflex: 0 0 auto;
     flex: 0 0 auto;
@@ -436,8 +436,8 @@
   }
 
   /* ::placeholder {
-          padding-left: 10px;
-        } */
+      padding-left: 10px;
+    } */
 
   .nt-button {
     /* width: 100% !important; */
@@ -572,10 +572,24 @@
   }
 
   .row {
-    width: 100% !important;
-    justify-content: center;
+    width: auto !important;
   }
 
+  .order_1 {
+    margin-bottom: 50px !important;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 0 !important;
+  }
+
+  .row :nth-child(5) {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .footer_text p {
+    text-align: center;
+  }
 
   #order_5 {
     height: 106.19px;
@@ -593,15 +607,11 @@
 
   #order_6 {
     position: relative;
-    top: 50px;
+    top: 20px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 845px) {
-  .row :nth-child(4) {
-    display: none !important;
-  }
-
   #order_6 {
     position: inherit;
   }
@@ -614,6 +624,31 @@
   }
 
   span {
+    font-size: 10px !important;
+  }
+
+  .act_opened {
+    width: 250px !important;
+    right: 260px !important;
+  }
+
+  .widget-title {
+    padding-bottom: 0 !important ;
+  }
+
+  .col {
+    padding-left: 5px !important;
+  }
+
+  .mb__10 {
+    margin: 0 0 0 0 !important;
+  }
+
+  .widget_if__pr {
+    width: 145px !important;
+  }
+
+  .db {
     font-size: 10px !important;
   }
 }

@@ -607,7 +607,7 @@
 
   #order_6 {
     position: relative;
-    top: 50px;
+    top: 20px;
   }
 }
 
@@ -624,6 +624,31 @@
   }
 
   span {
+    font-size: 10px !important;
+  }
+
+  .act_opened {
+    width: 250px !important;
+    right: 260px !important;
+  }
+
+  .widget-title {
+    padding-bottom: 0 !important ;
+  }
+
+  .col {
+    padding-left: 5px !important;
+  }
+
+  .mb__10 {
+    margin: 0 0 0 0 !important;
+  }
+
+  .widget_if__pr {
+    width: 145px !important;
+  }
+
+  .db {
     font-size: 10px !important;
   }
 }
