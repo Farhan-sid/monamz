@@ -600,7 +600,7 @@ span {
 
 .email {
   height: 40px;
-  width: 262.56px;
+  /* width: 262.56px; */
 }
 
 input {
@@ -819,10 +819,14 @@ input {
   text-align: center;
   line-height: 50px;
   flex: 0 0 auto;
-  width: auto;
   max-width: 100%;
   font-size: 30px;
   cursor: pointer;
+  transition: transform 0.3s ease; /* Ensure the transition is applied to the normal state as well */
+}
+
+.close_pp:hover {
+  transform: rotate(90deg);
 }
 
 .mini-card-wrap {
