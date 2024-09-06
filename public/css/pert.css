@@ -1048,7 +1048,7 @@ input {
 }
 
 .button {
-  /* width: 107.44px; */
+  width: 107.44px;
   height: 40px;
 }
 
@@ -1408,12 +1408,12 @@ select {
 }
 
 .popup_filter {
-  width: 300px; /* Adjusted width to be consistent */
+  width: 340px; /* Adjusted width to be consistent */
   overflow-y: auto;
   position: fixed;
   top: 0;
   bottom: 0;
-  left: -312px; /* Ensure it starts off-screen */
+  left: -354px; /* Ensure it starts off-screen */
   background-color: #fff;
   -webkit-overflow-scrolling: touch;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;

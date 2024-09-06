@@ -20,3 +20,4 @@ function removeItem(productid) {
 }
 
 window.addEventListener("load",setup);
+
