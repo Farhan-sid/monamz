@@ -1048,12 +1048,12 @@ input {
 }
 
 .button {
-  width: 107.44px;
+  /* width: 107.44px; */
   height: 40px;
 }
 
 .submit_btn {
-  width: 107.44px;
+  /* width: 107.44px; */
   height: 40px;
   background-color: #878787;
   border: none;
