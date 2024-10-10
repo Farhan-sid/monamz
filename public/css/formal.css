@@ -771,6 +771,24 @@ svg.ic_triangle_svg {
   transition: opacity 0.5s; /* Default transition time specify karein */
 }
 
+.wishlistadd .i1 {
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.wishlistadd:hover .i1 {
+  animation: scaleIcon 1s infinite ease-in-out; /* Infinite scaling */
+}
+
+@keyframes scaleIcon {
+  0%,
+  100% {
+    transform: scale(1); /* Normal size */
+  }
+  50% {
+    transform: scale(1.5); /* Scaled size */
+  }
+}
+
 .hb {
   height: 36px;
   width: 124.25px;
