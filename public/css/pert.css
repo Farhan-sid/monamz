@@ -869,9 +869,10 @@ svg.ic_triangle_svg {
 }
 
 .i2 {
-  opacity: 0;
+  opacity: 1;
   font-size: 18px;
   top: 0%;
+  background-color: #000;
 }
 
 .pk:hover .i2 {
@@ -879,6 +880,16 @@ svg.ic_triangle_svg {
   background-color: #000;
   color: white;
   transition: 0.2s;
+}
+
+.fa-eye:before {
+  position: absolute;
+  top: 30px;
+}
+
+.pk:hover .fa-eye:before {
+  transform: translateY(-100%);
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
 /* Initially keep the .tt-txt in its normal position */
@@ -890,7 +901,7 @@ svg.ic_triangle_svg {
 
 /* Initially place .i2 below the view (100% below its top position) */
 .pk .i2 {
-  transform: translateY(50%); /* Initially off-screen (below) */
+  transform: translateY(0%); /* Initially off-screen (below) */
   opacity: 0; /* Hidden initially */
   transition: transform 0.1s ease, opacity 0.1s ease; /* Smooth transition */
 }
@@ -905,8 +916,6 @@ svg.ic_triangle_svg {
   transform: translateY(0); /* Move to original position */
   opacity: 1; /* Show the icon */
 }
-
-
 
 .zp {
   /* width: 342px; */
