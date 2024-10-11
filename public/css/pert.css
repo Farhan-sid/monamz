@@ -776,7 +776,7 @@ svg.ic_triangle_svg {
 }
 
 .wishlistadd:hover .i1 {
-  animation: scaleIcon 1s infinite ease-in-out; /* Infinite scaling */
+  animation: scaleIcon 0.7s infinite ease-in-out; /* Infinite scaling */
 }
 
 @keyframes scaleIcon {
@@ -785,7 +785,7 @@ svg.ic_triangle_svg {
     transform: scale(1); /* Normal size */
   }
   50% {
-    transform: scale(1.5); /* Scaled size */
+    transform: scale(1.2); /* Scaled size */
   }
 }
 
