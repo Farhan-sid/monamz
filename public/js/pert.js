@@ -171,6 +171,8 @@ document.addEventListener('DOMContentLoaded', function () {
       popupFilter.classList.remove('active');
     });
   });
+var s_p = document.querySelector(".shortby_pick");
+console.log("s_p:", s_p);
 
   
 
