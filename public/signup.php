@@ -1,20 +1,47 @@
 <?php
-include 'db.php';
+include 'db.php'; // Database connection file
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $email = $_POST['email'];
-    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+    // Form se data lena
+    $email = trim($_POST['email']);
+    $password = trim($_POST['password']);
 
-    $sql = "INSERT INTO users (email, password) VALUES ('$email', '$password')";
+    // Agar fields empty na ho
+    if (!empty($email) && !empty($password)) {
+        
+        // Email already exists check
+        $check = "SELECT * FROM users WHERE email = ?";
+        $stmt = $conn->prepare($check);
+        $stmt->bind_param("s", $email);
+        $stmt->execute();
+        $result = $stmt->get_result();
 
-    if ($conn->query($sql) === TRUE) {
-        echo "Signup successful! <a href='login.php'>Login Here</a>";
+        if ($result->num_rows > 0) {
+            echo "⚠️ This email is already registered. Please login.";
+        } else {
+            // Password ko hash karna
+            $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+
+            // Insert query
+            $sql = "INSERT INTO users (email, password) VALUES (?, ?)";
+            $stmt = $conn->prepare($sql);
+            $stmt->bind_param("ss", $email, $hashedPassword);
+
+            if ($stmt->execute()) {
+                // ✅ Redirect to login after success
+                header("Location: index.html");
+                exit();
+            } else {
+                echo "❌ Error: " . $stmt->error;
+            }
+        }
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo "⚠️ Please fill all fields!";
     }
 }
 ?>
 
+<!-- HTML niche rakho -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,9 +50,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
     <h2>Signup</h2>
     <form method="POST">
-        <input type="text" name="email" placeholder="Email" required><br>
-        <input type="password" name="password" placeholder="Password" required><br>
+        <input type="email" name="email" placeholder="Enter Email" required><br>
+        <input type="password" name="password" placeholder="Create Password" required><br>
         <button type="submit">Signup</button>
     </form>
+    <p>Already have an account? <a href="login.php">Login here</a></p>
 </body>
 </html>
